@@ -1,0 +1,31 @@
+.simple {
+  padding-top: 150px;
+  padding-bottom: 147px;
+  background-image: url("../../img/simple-bg.png");
+  background-repeat: no-repeat;
+  background-size: 390px 780px;
+  background-position: calc(50% + 515px) top;
+}
+.simple__inner {
+  @include flexStayle(center, space-between);
+}
+.simple__content {
+  max-width: 445px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+.simple__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  @include textStyle(48px, 56px, #36536b);
+}
+.simple__text {
+  margin: 0;
+  @include textStyle(15px, 28px, #36536b);
+}
+.simple__imgPhone {
+  @include flexStayle(center, space-between);
+}
+.simple__img {
+  width: fit-content;
+}

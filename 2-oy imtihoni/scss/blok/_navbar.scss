@@ -1,0 +1,172 @@
+.nav__list {
+  @include flexStayle(center, space-between);
+  @include listStyle(0px, 0px, none);
+  margin-left: 24px;
+}
+.nav__item {
+  margin-left: 40px;
+}
+.nav__link {
+  @include linkStyle(none, 15px, 18px, rgba(54, 83, 107,0.7));
+}
+.nav__link:hover {
+  color: #4f7899;
+  border-bottom: 2px solid #4f7899;
+}
+.nav__link:active {
+  color:  #36536b;
+  border: none;
+}
+
+.servicesList {
+  @include flexStayle(center, space-between);
+  @include listStyle(0px, 0px, none);
+  text-align: center;
+}
+.servicesList__item {
+  max-width: 350px;
+}
+.servicesList__personal::before {
+  display: block;
+  background-image: url("../../img/personal.png");
+  width: 106px;
+  height: 106px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
+  background-repeat: no-repeat;
+  content: "";
+}
+.servicesList__banking::before {
+  display: block;
+  background-image: url("../../img/banking.png");
+  width: 106px;
+  height: 106px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
+  background-repeat: no-repeat;
+  content: "";
+}
+.servicesList__consumer::before {
+  display: block;
+  background-image: url("../../img/consumer.png");
+  width: 106px;
+  height: 106px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
+  background-repeat: no-repeat;
+  content: "";
+}
+.servicesList__heading {
+  @include textStyle(18px, 25px, #36536b);
+  margin: 0;
+  margin-bottom: 16px;
+}
+.servicesList__text {
+  @include textStyle(15px, 25px, #6C8294);
+  margin: 0;
+}
+.footerList {
+  @include flexStayle(center, space-between);
+  @include listStyle(0px, 0px, none);
+  margin-left: 24px;
+}
+.footerList__item {
+  margin-left: 40px;
+}
+.footerList__link {
+  @include linkStyle(none, 15px, 18px,rgba(251, 252, 254, 0.7));
+}
+.footerList__link:hover {
+  color: #e3e5e7b3;
+  border-bottom: 2px solid  #e3e5e7b3;
+}
+.footerList__link:active {
+  color: #fbfcfe;
+  border: none;
+}
+.networkList {
+  @include flexStayle(center, space-between);
+  @include listStyle(0px, 0px, none);
+}
+.networkList__item {
+  margin-left: 24px;
+}
+.networkList__link {
+  display: inline-block;
+}
+.facebook:hover path {
+  fill: #f7acc9;
+}
+.linkedin:hover path {
+  fill: #f7acc9;
+}
+.twitter:hover path {
+  fill: #f7acc9;
+}
+.facebook:active path {
+  fill: #da6d97;
+}
+.linkedin:active path {
+  fill: #da6d97;
+}
+.twitter:active path {
+  fill: #da6d97;
+}
+
+.pricingList {
+  @include flexStayle(center, space-between);
+  @include listStyle(0px, 0px, none);
+}
+.pricingList__item {
+  width: 340px;
+}
+.pricingList__heading {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 16px;
+  @include textStyle(32px, 40px, #ba4270);
+}
+.pricingList__text {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 8px;
+  @include textStyle(15px, 28px,  #6c8294);
+}
+.pricingList__price {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  margin-bottom: 24px;
+  @include textStyle(56px, 72px,  #36536b);
+}
+.pricingList__line {
+  height: 1px;
+  color: rgba(54, 83, 107,0.25);
+  margin-bottom: 24px;
+}
+
+.scribList {
+  @include flexStayle(center, space-between);
+  @include listStyle(0px, 0px, none);
+  padding-top: 600px;
+  margin-bottom: 73px;
+}
+.scribList__item {
+  width: 350px;
+}
+.scribList__name {
+  display: block;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  @include textStyle(16px, 28px, rgba(54, 83, 107,0.7));
+}
+
+.scribList__amount {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  @include textStyle(56px, 72px, #ba4270);
+}
